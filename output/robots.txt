@@ -1,4 +1,0 @@
-Sitemap: https://kenaigeneralalarm.com/sitemapindex.xml
-
-User-Agent: *
-Host: kenaigeneralalarm.com
