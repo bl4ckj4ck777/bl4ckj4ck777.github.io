@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1637715911.3610084
+_modified_time = 1637716318.187039
 _enable_loop = True
 _template_filename = 'themes/canterville/templates/base_helper.tmpl'
 _template_uri = 'base_helper.tmpl'
@@ -32,31 +32,31 @@ def render_body(context,**pageargs):
 def render_html_headstart(context):
     __M_caller = context.caller_stack._push_frame()
     try:
-        description = context.get('description', UNDEFINED)
-        use_cdn = context.get('use_cdn', UNDEFINED)
-        extra_head_data = context.get('extra_head_data', UNDEFINED)
-        prevlink = context.get('prevlink', UNDEFINED)
-        favicons = context.get('favicons', UNDEFINED)
-        url_type = context.get('url_type', UNDEFINED)
-        title = context.get('title', UNDEFINED)
         blog_title = context.get('blog_title', UNDEFINED)
-        url_replacer = context.get('url_replacer', UNDEFINED)
-        comment_system = context.get('comment_system', UNDEFINED)
-        use_base_tag = context.get('use_base_tag', UNDEFINED)
-        lang = context.get('lang', UNDEFINED)
-        permalink = context.get('permalink', UNDEFINED)
+        description = context.get('description', UNDEFINED)
+        meta_generator_tag = context.get('meta_generator_tag', UNDEFINED)
+        favicons = context.get('favicons', UNDEFINED)
+        theme_color = context.get('theme_color', UNDEFINED)
+        comment_system_id = context.get('comment_system_id', UNDEFINED)
+        url_type = context.get('url_type', UNDEFINED)
         def html_feedlinks():
             return render_html_feedlinks(context)
+        url_replacer = context.get('url_replacer', UNDEFINED)
         use_open_graph = context.get('use_open_graph', UNDEFINED)
-        comment_system_id = context.get('comment_system_id', UNDEFINED)
-        nextlink = context.get('nextlink', UNDEFINED)
-        def html_stylesheets():
-            return render_html_stylesheets(context)
+        title = context.get('title', UNDEFINED)
         abs_link = context.get('abs_link', UNDEFINED)
         is_rtl = context.get('is_rtl', UNDEFINED)
-        theme_color = context.get('theme_color', UNDEFINED)
+        lang = context.get('lang', UNDEFINED)
+        permalink = context.get('permalink', UNDEFINED)
+        comment_system = context.get('comment_system', UNDEFINED)
+        def html_stylesheets():
+            return render_html_stylesheets(context)
+        prevlink = context.get('prevlink', UNDEFINED)
+        use_cdn = context.get('use_cdn', UNDEFINED)
         twitter_card = context.get('twitter_card', UNDEFINED)
-        meta_generator_tag = context.get('meta_generator_tag', UNDEFINED)
+        extra_head_data = context.get('extra_head_data', UNDEFINED)
+        use_base_tag = context.get('use_base_tag', UNDEFINED)
+        nextlink = context.get('nextlink', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\r\n<!DOCTYPE html>\r\n<html ')
         __M_writer("prefix='")
@@ -167,11 +167,11 @@ def render_html_stylesheets(context):
 def render_html_feedlinks(context):
     __M_caller = context.caller_stack._push_frame()
     try:
-        sorted = context.get('sorted', UNDEFINED)
-        len = context.get('len', UNDEFINED)
-        translations = context.get('translations', UNDEFINED)
-        generate_rss = context.get('generate_rss', UNDEFINED)
         _link = context.get('_link', UNDEFINED)
+        len = context.get('len', UNDEFINED)
+        generate_rss = context.get('generate_rss', UNDEFINED)
+        sorted = context.get('sorted', UNDEFINED)
+        translations = context.get('translations', UNDEFINED)
         generate_atom = context.get('generate_atom', UNDEFINED)
         rss_link = context.get('rss_link', UNDEFINED)
         __M_writer = context.writer()
@@ -212,12 +212,12 @@ def render_html_feedlinks(context):
 def render_html_translations(context):
     __M_caller = context.caller_stack._push_frame()
     try:
-        messages = context.get('messages', UNDEFINED)
+        lang = context.get('lang', UNDEFINED)
+        _link = context.get('_link', UNDEFINED)
         sorted = context.get('sorted', UNDEFINED)
+        messages = context.get('messages', UNDEFINED)
         translations = context.get('translations', UNDEFINED)
         abs_link = context.get('abs_link', UNDEFINED)
-        _link = context.get('_link', UNDEFINED)
-        lang = context.get('lang', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\r\n    <ul class="translations">\r\n')
         for langname in sorted(translations):
