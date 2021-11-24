@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1637722874.33969
+_modified_time = 1637723466.2380903
 _enable_loop = True
 _template_filename = 'themes/canterville/templates/post.tmpl'
 _template_uri = 'post.tmpl'
@@ -42,17 +42,17 @@ def render_body(context,**pageargs):
         def extra_head():
             return render_extra_head(context._locals(__M_locals))
         _link = context.get('_link', UNDEFINED)
-        def content():
-            return render_content(context._locals(__M_locals))
-        parent = context.get('parent', UNDEFINED)
-        math = _mako_get_namespace(context, 'math')
         messages = context.get('messages', UNDEFINED)
+        helper = _mako_get_namespace(context, 'helper')
+        parent = context.get('parent', UNDEFINED)
         author_pages_generated = context.get('author_pages_generated', UNDEFINED)
-        comments = _mako_get_namespace(context, 'comments')
         site_has_comments = context.get('site_has_comments', UNDEFINED)
         post = context.get('post', UNDEFINED)
-        helper = _mako_get_namespace(context, 'helper')
+        comments = _mako_get_namespace(context, 'comments')
         date_format = context.get('date_format', UNDEFINED)
+        def content():
+            return render_content(context._locals(__M_locals))
+        math = _mako_get_namespace(context, 'math')
         __M_writer = context.writer()
         __M_writer('\r\n')
         __M_writer('\r\n')
@@ -79,10 +79,10 @@ def render_extra_head(context,**pageargs):
     try:
         def extra_head():
             return render_extra_head(context)
-        parent = context.get('parent', UNDEFINED)
         math = _mako_get_namespace(context, 'math')
-        post = context.get('post', UNDEFINED)
         helper = _mako_get_namespace(context, 'helper')
+        parent = context.get('parent', UNDEFINED)
+        post = context.get('post', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\r\n    ')
         __M_writer(str(parent.extra_head()))
@@ -126,15 +126,15 @@ def render_content(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
         _link = context.get('_link', UNDEFINED)
+        messages = context.get('messages', UNDEFINED)
+        author_pages_generated = context.get('author_pages_generated', UNDEFINED)
+        site_has_comments = context.get('site_has_comments', UNDEFINED)
+        post = context.get('post', UNDEFINED)
+        comments = _mako_get_namespace(context, 'comments')
+        date_format = context.get('date_format', UNDEFINED)
         def content():
             return render_content(context)
         math = _mako_get_namespace(context, 'math')
-        messages = context.get('messages', UNDEFINED)
-        author_pages_generated = context.get('author_pages_generated', UNDEFINED)
-        comments = _mako_get_namespace(context, 'comments')
-        site_has_comments = context.get('site_has_comments', UNDEFINED)
-        post = context.get('post', UNDEFINED)
-        date_format = context.get('date_format', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\r\n\r\n  <article class="post post">\r\n    <header class="post-header">\r\n        <h1 class="post-title">')
         __M_writer(str(post.title()))

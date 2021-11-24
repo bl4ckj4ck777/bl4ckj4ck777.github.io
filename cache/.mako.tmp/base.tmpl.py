@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1637722874.0301917
+_modified_time = 1637723466.5172608
 _enable_loop = True
 _template_filename = 'themes/canterville/templates/base.tmpl'
 _template_uri = 'base.tmpl'
@@ -37,29 +37,29 @@ def render_body(context,**pageargs):
         _mako_get_namespace(context, 'base')._populate(_import_ns, ['*'])
         _mako_get_namespace(context, 'header')._populate(_import_ns, ['*'])
         _mako_get_namespace(context, 'footer')._populate(_import_ns, ['*'])
-        def content():
-            return render_content(context._locals(__M_locals))
-        blog_url = _import_ns.get('blog_url', context.get('blog_url', UNDEFINED))
-        set_locale = _import_ns.get('set_locale', context.get('set_locale', UNDEFINED))
-        body_end = _import_ns.get('body_end', context.get('body_end', UNDEFINED))
-        logo_url = _import_ns.get('logo_url', context.get('logo_url', UNDEFINED))
-        template_hooks = _import_ns.get('template_hooks', context.get('template_hooks', UNDEFINED))
         lang = _import_ns.get('lang', context.get('lang', UNDEFINED))
-        pagekind = _import_ns.get('pagekind', context.get('pagekind', UNDEFINED))
-        def extra_head():
-            return render_extra_head(context._locals(__M_locals))
-        BANNER_URL = _import_ns.get('BANNER_URL', context.get('BANNER_URL', UNDEFINED))
+        LINKEDIN_URL = _import_ns.get('LINKEDIN_URL', context.get('LINKEDIN_URL', UNDEFINED))
+        description = _import_ns.get('description', context.get('description', UNDEFINED))
         def extra_js():
             return render_extra_js(context._locals(__M_locals))
-        description = _import_ns.get('description', context.get('description', UNDEFINED))
-        footer = _mako_get_namespace(context, 'footer')
-        GITHUB_URL = _import_ns.get('GITHUB_URL', context.get('GITHUB_URL', UNDEFINED))
-        LINKEDIN_URL = _import_ns.get('LINKEDIN_URL', context.get('LINKEDIN_URL', UNDEFINED))
+        BANNER_URL = _import_ns.get('BANNER_URL', context.get('BANNER_URL', UNDEFINED))
         title = _import_ns.get('title', context.get('title', UNDEFINED))
+        set_locale = _import_ns.get('set_locale', context.get('set_locale', UNDEFINED))
+        logo_url = _import_ns.get('logo_url', context.get('logo_url', UNDEFINED))
         header = _mako_get_namespace(context, 'header')
-        post = _import_ns.get('post', context.get('post', UNDEFINED))
-        base = _mako_get_namespace(context, 'base')
         TWITTER_URL = _import_ns.get('TWITTER_URL', context.get('TWITTER_URL', UNDEFINED))
+        def content():
+            return render_content(context._locals(__M_locals))
+        body_end = _import_ns.get('body_end', context.get('body_end', UNDEFINED))
+        template_hooks = _import_ns.get('template_hooks', context.get('template_hooks', UNDEFINED))
+        def extra_head():
+            return render_extra_head(context._locals(__M_locals))
+        footer = _mako_get_namespace(context, 'footer')
+        base = _mako_get_namespace(context, 'base')
+        pagekind = _import_ns.get('pagekind', context.get('pagekind', UNDEFINED))
+        GITHUB_URL = _import_ns.get('GITHUB_URL', context.get('GITHUB_URL', UNDEFINED))
+        post = _import_ns.get('post', context.get('post', UNDEFINED))
+        blog_url = _import_ns.get('blog_url', context.get('blog_url', UNDEFINED))
         __M_writer = context.writer()
         __M_writer('\r\n')
         __M_writer('\r\n')
