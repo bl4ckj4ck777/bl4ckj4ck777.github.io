@@ -1397,8 +1397,8 @@ WARN_ABOUT_TAG_METADATA = False
 # Put in global_context things you want available on all your templates.
 # It can be anything, data, functions, modules, etc.
 GLOBAL_CONTEXT = {
-        'TWITTER_URL': 'https://twitter.com/getnikola',
-        'GITHUB_URL': 'https://github.com/getnikola',
+        'TWITTER_URL': None,
+        'GITHUB_URL': None,
         'LINKEDIN_URL': None,
         'BANNER_URL': '/assets/img/silk-road.jpg'
 }
