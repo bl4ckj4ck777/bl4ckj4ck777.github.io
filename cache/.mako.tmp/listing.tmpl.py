@@ -5,7 +5,7 @@ STOP_RENDERING = runtime.STOP_RENDERING
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 10
-_modified_time = 1637715406.991105
+_modified_time = 1637715675.1142554
 _enable_loop = True
 _template_filename = 'C:/Users/froze/OneDrive/Documents/Python/nikola/lib/site-packages/nikola/data/themes/base/templates/listing.tmpl'
 _template_uri = 'listing.tmpl'
@@ -30,15 +30,15 @@ def render_body(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
         __M_locals = __M_dict_builtin(pageargs=pageargs)
-        folders = context.get('folders', UNDEFINED)
-        ui = _mako_get_namespace(context, 'ui')
-        files = context.get('files', UNDEFINED)
-        crumbs = context.get('crumbs', UNDEFINED)
-        code = context.get('code', UNDEFINED)
-        title = context.get('title', UNDEFINED)
-        source_link = context.get('source_link', UNDEFINED)
         def content():
             return render_content(context._locals(__M_locals))
+        code = context.get('code', UNDEFINED)
+        crumbs = context.get('crumbs', UNDEFINED)
+        files = context.get('files', UNDEFINED)
+        source_link = context.get('source_link', UNDEFINED)
+        folders = context.get('folders', UNDEFINED)
+        ui = _mako_get_namespace(context, 'ui')
+        title = context.get('title', UNDEFINED)
         messages = context.get('messages', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n')
@@ -56,15 +56,15 @@ def render_body(context,**pageargs):
 def render_content(context,**pageargs):
     __M_caller = context.caller_stack._push_frame()
     try:
-        folders = context.get('folders', UNDEFINED)
-        ui = _mako_get_namespace(context, 'ui')
-        files = context.get('files', UNDEFINED)
-        crumbs = context.get('crumbs', UNDEFINED)
-        code = context.get('code', UNDEFINED)
-        title = context.get('title', UNDEFINED)
-        source_link = context.get('source_link', UNDEFINED)
         def content():
             return render_content(context)
+        code = context.get('code', UNDEFINED)
+        crumbs = context.get('crumbs', UNDEFINED)
+        files = context.get('files', UNDEFINED)
+        source_link = context.get('source_link', UNDEFINED)
+        folders = context.get('folders', UNDEFINED)
+        ui = _mako_get_namespace(context, 'ui')
+        title = context.get('title', UNDEFINED)
         messages = context.get('messages', UNDEFINED)
         __M_writer = context.writer()
         __M_writer('\n')
