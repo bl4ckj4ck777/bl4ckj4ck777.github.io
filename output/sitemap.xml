@@ -7,11 +7,11 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://kenaigeneralalarm.com/</loc>
-  <lastmod>2021-11-24T00:41:00Z</lastmod>
+  <lastmod>2021-11-24T03:00:00Z</lastmod>
  </url>
  <url>
   <loc>https://kenaigeneralalarm.com/archive.html</loc>
-  <lastmod>2021-11-24T01:25:00Z</lastmod>
+  <lastmod>2021-11-24T02:58:00Z</lastmod>
  </url>
  <url>
   <loc>https://kenaigeneralalarm.com/categories/</loc>
@@ -36,5 +36,17 @@
  <url>
   <loc>https://kenaigeneralalarm.com/pages/contact/contact.html</loc>
   <lastmod>2021-11-24T01:16:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://kenaigeneralalarm.com/pages/pricing/</loc>
+  <lastmod>2021-11-24T03:00:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://kenaigeneralalarm.com/pages/pricing/pricing.html</loc>
+  <lastmod>2021-11-24T02:58:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://kenaigeneralalarm.com/pricing.html</loc>
+  <lastmod>2021-11-24T02:58:00Z</lastmod>
  </url>
 </urlset>

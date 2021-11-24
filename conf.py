@@ -141,6 +141,7 @@ TRANSLATIONS_PATTERN = '{path}.{lang}.{ext}'
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
         ("/contact.html", "Contact Us"),
+        ("/pricing.html", "Pricing"),
     ),
 }
 
